@@ -109,7 +109,10 @@ jobs:
         run: helm lint .
 
       - name: Template helm
-        run: helm template .
+        run: helm template todoapp .
+
+      - name: Package helm
+        run: helm package .
 
       - uses: actions/upload-artifacts@v4
         name: Upload Helm artifacts
