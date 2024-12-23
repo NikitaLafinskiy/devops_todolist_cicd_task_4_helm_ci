@@ -57,7 +57,7 @@ jobs:
           path: .
 
       - name: Upload helm artifacts
-        uses: actions/upload-artifacts@v4
+        uses: actions/upload-artifact@v4
         with:
           name: helm-artifacts
           path: ../helm-charts
@@ -115,7 +115,7 @@ jobs:
       - name: Package helm
         run: helm package .
 
-      - uses: actions/upload-artifacts@v4
+      - uses: actions/upload-artifact@v4
         name: Upload Helm artifacts
         with:
           name: helm-package-artifacts
