@@ -93,7 +93,7 @@ jobs:
     needs: python-ci
     defaults:
       run:
-        working-directory: ./helm-charts/todoapp
+        working-directory: ./todoapp
 
     steps:
       - uses: actions/download-artifact@v4
